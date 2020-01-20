@@ -1,0 +1,19 @@
+{
+  "name": "Bye Bing",
+  "version": "1.0",
+  "description": "I would like to use Google instead.",
+  "manifest_version": 2,
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [ "https://www.bing.com/*" ],
+      "js": [ "redirect.js" ]
+    }
+  ]
+}

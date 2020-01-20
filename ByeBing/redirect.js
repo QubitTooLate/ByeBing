@@ -1,0 +1,1 @@
+window.location.assign("https://www.google.be/search?&q=" + document.getElementById("sb_form_q").value + "&uact=5");
